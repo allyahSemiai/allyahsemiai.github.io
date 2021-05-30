@@ -1,0 +1,454 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+@font-face{
+    src:url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+}
+
+body{
+    background-color: black;
+    color: cornsilk;
+    font-family: 'Quicksand';    
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    left:0;
+    top:0;
+    right: 0;
+}
+
+nav img{
+    width:120%;
+    margin:0px -3px;
+    opacity: 0.3;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+    list-style-position: inside;
+  	padding: 0;
+}
+
+nav .fas{
+    display: none;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+li {
+    font-size: 1.2rem;
+    font-weight: 450;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    color:#8c8c8c;
+    cursor: pointer;
+    
+}
+
+.active{
+    background-color: #8c8c8c;
+    color:black;
+}
+
+
+#resume a {
+    text-decoration: none;
+    color: black;
+}
+
+
+section h2{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 0;
+    color:white;
+}
+
+main section{
+    margin:50px 20px;
+    font-size: 1.5rem;
+    color: #8c8c8c;
+    text-transform: capitalize;    
+}
+
+section h3{
+    color:white;
+    font-size: 3rem;
+    word-spacing: 5px;
+    font-weight: 300;
+}
+
+#presentation h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 5rem;
+    margin:50px;
+    color:white;
+}
+
+#presentation{
+    margin-bottom: 100px;
+}
+
+#presentation img{
+    width:100%;
+    margin:0 auto;
+    display: block;
+}
+
+#myname h3, #contactMe h3, #myphotos h3{
+    font-size: 3rem;
+    text-transform: capitalize;
+    border-bottom: 1px solid ;
+    width:62%;
+    padding-bottom: 20px;   
+}
+
+#myskills div{
+    width: 100%;
+    height: 30px;
+}
+
+#myskills div:first-of-type{  
+    background:linear-gradient(to right, #333333 95%, white 5%);   
+}
+
+#myskills div:nth-of-type(2){
+     background:linear-gradient(to right, #333333 70%, white 30%);   
+}
+
+#myskills div:last-of-type{
+    background:linear-gradient(to right, #333333 60%, white 40%);   
+}
+
+#realisations{
+    margin-top: 35px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+#resume{
+    width:60%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-indent: 10px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+#resume .fas, #contactMe form .far{
+    margin-right: 5px;
+}
+
+#myprice article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+#myprice table{
+    margin-bottom: 10px;
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+    color: black;
+    opacity: 0.7;    
+}
+
+#myprice table th {
+    background-color: #333333;
+    padding: 35px;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+#myprice table td{
+    background-color: white;
+    padding: 20px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+#myprice table tfoot td {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+#myprice span{
+    display: block;
+    font-size: 2rem ;
+    font-weight: bold;
+}
+
+#myprice tfoot button, #contactMe button{
+    padding: 10px 25px;
+    border:none;
+    background-color: white;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#myprice table:hover{
+    opacity:1;
+}
+
+#reputation article{
+    margin-bottom: 80px;
+    
+    
+}
+
+#reputation article img {
+    float: left;
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    margin-right: 20px;
+    vertical-align: -webkit-baseline-middle;
+    
+}
+
+
+.myphotos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;    
+}
+
+.myphotos img{
+    width:100%;
+}
+
+
+
+#contactMe .fas{
+    color: white;
+    font-size: 2.5rem;
+    margin-right: 20px;
+}
+#contactMe article{
+    margin-bottom: 50px;
+}
+#contactMe p{
+    padding: 10px;
+}
+
+
+#contactMe form input{
+    display: block;
+    width:100%;
+    margin: 20px 0;
+    padding: 15px 5px;
+    font-size: 1.5rem;
+    border-color: transparent;
+}
+#contactMe form span{
+    margin-top:10px;
+    display: block;
+    color:red;
+}
+
+footer {
+    margin:100px 0;
+}
+
+footer p{
+    margin: 0 10px ;
+    padding: 10px;
+    color:#8c8c8c;
+    font-size: 1.4rem;
+    
+}
+footer .fab {
+    margin-right: 10px;
+    color:#8c8c8c;
+    font-size: 2rem;
+    
+}
+
+footer .fab:hover{
+    opacity: 0.7;
+}
+
+footer p a{
+    color:#8c8c8c;
+}
+
+@media only screen and (min-width: 767px){
+
+    nav {
+        position: fixed;
+        width: 15%;
+        height: 100vh;
+        background-color: #333333;
+        left:0;
+        top:0;
+        bottom: 0;
+    }
+    
+    nav li{
+        font-size: 1.5rem;
+        padding: 15px 0;
+        color: white;
+        font-weight: 200;
+    }
+
+    nav li:hover{
+        background-color: black;
+    }
+
+    
+    nav #home{
+        background-color: black;
+    }
+    
+    nav #home:hover{
+        background-color: #8c8c8c;
+    }
+
+
+    nav img{
+        display:block;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        justify-content: space-around;
+   }
+
+   nav .fas{
+       display: block;
+   }
+   
+   section h2{
+    font-size: 2rem;
+    }
+
+    #presentation h1{  
+        font-size: 6rem;   
+    }
+
+    #presentation{
+        margin-bottom: 200px;
+    }
+
+    main, footer{
+        margin-right: 0;
+    }
+
+    main section {
+        margin:60px 2% 50px 18%;
+    }
+    
+    #myname h3, #contactMe h3, #myphotos h3{
+        width:25%;
+    }
+
+    #realisations{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 2rem;
+    }
+    #resume{
+        width:35%;
+        padding: 15px;
+    }
+
+    #myprice article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    
+    }
+    
+    #myprice table{
+        margin: 0;
+        width: 49.5%!important;  
+    }
+
+    .myphotos {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;    
+    }
+
+    .myphotos img:first-of-type{
+        grid-area:1/1/3/2;
+    }
+
+
+    footer p{
+        margin: 0 17%;
+        padding: 10px;
+        color:#8c8c8c;
+        font-size: 1.8rem;
+        
+    }
+
+
+}
+
+@media screen and (min-width:1024px){
+    nav{
+        width:9%;
+    }
+    nav li{
+        padding:20px 0;
+        font-size: 1.5rem;
+    }
+
+    main{
+        margin-left:9%;
+    }
+    #myname h3, #contactMe h3, #myphotos h3{
+        width:20%;   
+    }
+    main section{
+        margin:60px 9% 150px 9%;
+            
+    }
+
+    #realisation{
+        font-size: 2.5rem;
+    }
+
+    #resume{
+        width:25%;
+    }
+    footer p{
+        margin:0 16.25%
+    }
+
+
+}
